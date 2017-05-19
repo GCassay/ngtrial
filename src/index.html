@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="appTrial">
+
+  <head>
+    <meta charset="utf-8">
+    <title>CODE TRIALS</title>
+    <link rel="stylesheet" href="">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div id="container" class="wrapper">
+
+      <!-- Main Header Bar -->
+      <trial-header></trial-header>
+
+      <div id="content">
+        <trial-list></trial-list>
+      </div>
+
+        <!-- New Trial Form -->
+<!--        <section id="trial-form" class="view-form hidden-form">
+          <form name="new-trial-form" id="new-trial-form" ng-submit="addTrial()">
+            <div>
+              <h2>New Trial</h2>
+              <input type="text" id="formTitle" name="formTitle" class="add-form-items add-form-field" placeholder="Title" required="required">
+              <input type="text" id="formDesc" name="formDesc" class="add-form-items add-form-field" placeholder="Description" required="required">
+              <input type="text" id="formUrl" name="formUrl" class="add-form-items add-form-field" placeholder="URL" required="required">
+              <button class="add-form-items add-form-btn">SAVE</button>
+            </div>
+          </form>
+        </section>
+-->
+        <!-- Trial List -->
+<!--        <section id="trial-list">
+          <div>
+            <h2>Trial List</h2>
+            <div id="list-container">
+-->
+              <!-- TRIAL TEMPLATE -->
+<!--                <ul class="trial">
+                  <li ng-repeat='trial in trials'>
+                    <form class="trial-block-form" ng-submit="trialUpdate()">
+-->
+                      <!-- Trial Header -->
+                      <!-- <div class="trial-top">
+                        <a href="" class="trial-link" target="_blank">
+                          <h3 class="trial-title"></h3>
+                        </a>
+                        <div class="options">
+                          <i class="fa fa-chevron-down options-btn" aria-hidden="true"></i>
+                        </div>
+                      </div> -->
+
+                      <!-- Trial Data Form -->
+                      <!-- <div class="trial-editor hidden-trial">
+                        <div class="trial-data">
+
+                          <label for="trial-input-title" class="trial-label">
+                            <i class="fa fa-caret-right" aria-hidden="true"></i> TITLE
+                          </label>
+                          <input type="text" name="trial-input-title" class="trial-txt-input trial-input-title">
+
+                          <label for="trial-input-desc" class="trial-label">
+                            <i class="fa fa-caret-right" aria-hidden="true"></i> DESCRIPTION
+                          </label>
+                          <input type="text" name="trial-input-desc" class="trial-txt-input trial-input-desc">
+
+                          <label for="trial-input-url" class="trial-label">
+                            <i class="fa fa-caret-right" aria-hidden="true"></i> LINK
+                          </label>
+                          <input type="text" name="trial-input-url" class="trial-txt-input trial-input-url"> -->
+            <!-- TODO
+                          <label for="trial-input-comm" class="trial-label">
+                            <i class="fa fa-caret-right" aria-hidden="true"></i> COMMENTS
+                          </label>
+                          <textarea name="trial-input-comm" class="trial-txt-input trial-input-comm" rows="4" maxlength="225"></textarea>
+            -->
+                          <!-- <label class="trial-label">
+                            <i class="fa fa-caret-right" aria-hidden="true"></i> STATUS
+                          </label>
+
+                          <ul class="trial-status">
+                            <li id="op-accept">
+                              <input type="radio" class="trial-input-status" name="trial-input-status" value="0"> Pending
+                            </li>
+                            <li id="op-reject">
+                              <input type="radio" class="trial-input-status" name="trial-input-status" value="1"> Approved
+                            </li>
+                            <li id="op-pending">
+                              <input type="radio" class="trial-input-status" name="trial-input-status" value="2"> Not Approved
+                            </li>
+                          </ul>
+
+                        </div>
+                        <div class="trial-submit">
+                          <button class="trial-delete-btn" ng-click="trialRemove()">Delete</button>
+                          <button class="trial-submit-btn">Save changes</button>
+                        </div>
+                      </div>
+                    </form>
+                  </li>
+                </ul>
+
+            </div>
+          </div>
+        </section>
+      </div> -->
+    </div>
+
+    <script src="./js/angular.min.js"></script>
+    <script src="./app.module.js"></script>
+    <script src="./components/trial-header/trial-header.module.js"></script>
+    <script src="./components/trial-header/trial-header.component.js"></script>
+    <script src="./components/trial-list/trial-list.module.js"></script>
+    <script src="./components/trial-list/trial-list.component.js"></script>
+  </body>
+
+</html>
