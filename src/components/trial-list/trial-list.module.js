@@ -1,1 +1,1 @@
-angular.module('trialList', []);
+angular.module('trialList', ['trialBlock']);
