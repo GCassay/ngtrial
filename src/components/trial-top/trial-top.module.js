@@ -1,1 +1,1 @@
-angular.module('trialTop', ['topForm']);
+angular.module('trialTop', []);

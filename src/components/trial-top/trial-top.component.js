@@ -1,13 +1,15 @@
-angular .module('trialTop', ['topForm'])
+angular .module('trialTop')
         .component('trialTop',{
 
           templateUrl: './components/trial-top/trial-top.template.html',
 
-          bindings: {
-            
-          },
+          controller: trialTopController
 
-          controller: function trialTopController($scope) {
-
-          }
         });
+
+function trialTopController() {
+
+  this.addTrial = function() {
+
+  }
+}
