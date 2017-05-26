@@ -1,1 +1,1 @@
-angular.module('trialTop', []);
+angular.module('trialTop', ['services']);

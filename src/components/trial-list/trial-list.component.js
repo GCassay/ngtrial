@@ -8,7 +8,7 @@ angular .module('trialList')
         });
 
 function listControllerFunc(crud){
-console.log(crud.trials);
+console.log(crud.trials[0]);
   crud.trials.push('trial 4');
-  this.algo = crud.trials;
+  this.trials = crud.trials;
 }

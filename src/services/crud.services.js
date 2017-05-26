@@ -1,29 +1,6 @@
-// angular .module('services', [])
-//         .service('service.trialCrud', function() {
-//
-//           var trials = ['trial 1', 'trial 2', 'trial 3'];
-//
-//           trialCreate = function() {
-//             return trials;
-//           }
-//
-//           this.trialRead = function() {
-//
-//           }
-//
-//           this.trialUpdate = function() {
-//
-//           }
-//
-//           this.trialDelete = function() {
-//
-//           }
-//
-//         });
-
 angular .module('services', [])
         .factory('crud', function crudfunc(){
           return {
-            trials : ['trial 1', 'trial 2', 'trial 3']
+            trials :[{id:1,title:"Numbers 1-1000",desc:"List numbers from 1 to 100",url:"https://jsfiddle.net/GCassay/7bozbdoj/",status:"1"},{id:2,title:"Even Numbers",desc:"List even numbers from 1 to 1000",url:"https://jsfiddle.net/GCassay/qnhsuwmt/",status:"0"},{id:3,title:"Even Numbers",desc:"List even numbers from 1 to 1000",url:"https://jsfiddle.net/GCassay/qnhsuwmt/",status:"1"},{id:4,title:"Even or Odd",desc:"Check whether a number is even or odd",url:"https://jsfiddle.net/GCassay/kcm8apzf/",status:"1"},{id:5,title:"Generate Array",desc:"Fill an array with n elements",url:"https://jsfiddle.net/GCassay/mhLaes50/",status:"0"},{id:"839bb00a86bdf056be209314a068cc27",title:"Palindrome",desc:"Check whether a word is a palindrome",url:"https://jsfiddle.net/GCassay/kj5rpt4p/",status:"2"},{id:"c27cc18a2a95a259aed35c781b37c159",title:"Order Array",desc:"Select array order to display",url:"https://jsfiddle.net/GCassay/yL35etjz/",status:"0"},{id:"b7a95218970333e3a92f8b1d78b83e4d",title:"Div Dimension",desc:"Show height & width",url:"https://jsfiddle.net/GCassay/7eLLbL1h/",status:"0"},{id:"13685c6f5202d962046b3d23be712ffd",title:"Multiple boxes",desc:"Show dimensions inside each box",url:"https://jsfiddle.net/GCassay/6oc9rzdn/",status:"0"},{id:"db0c9494764eb295782567e96b15b81e",title:"Multiple Boxes Function",desc:"Show dimensions inside each box",url:"https://jsfiddle.net/GCassay/tgnuxo0s/",status:"0"},{id:"643b8226fcfe7d5e5d782f0d0c295b1f",title:"Box Generator Function",desc:"Generate n boxes and display dimensions inside each one",url:"https://jsfiddle.net/GCassay/p5rzr1n0/",status:"0"},{id:"78183c63be2fcd1b3c4ad9d0a0ec8d5e",title:"Katiuska Box",desc:"Generate boxes duplicating the previous size and alternating 3 colors",url:"https://jsfiddle.net/GCassay/c8e4v9ph/",status:"0"},{id:"3f0aaf8295e51abda4decdb7b1173e77",title:"Box click",desc:"Display box size on click",url:"https://jsfiddle.net/GCassay/940w108p/",status:"0"},{id:"92c233bf2845e01b8125476ab0a5b12b",title:"Mark Box",desc:"Display border on selected Box",url:"https://jsfiddle.net/GCassay/7Lbdcc16/",status:"0"},{id:"ca4f597954d9434da781934a5d2fbbdc",title:"Box Generator Button",desc:"Create box on button click and delete on box click",url:"https://jsfiddle.net/GCassay/ohhf9wv0/",status:"0"},{id:"e1cb51ac3a268eab0b1db244cd3c19c6",title:"Color Box",desc:"Create box with selected colors",url:"https://jsfiddle.net/GCassay/69kkgc0c/",status:"0"},{id:"1d35e44542e1206838285540f6db82d8",title:"FADING BG",desc:"Change BG color on click con fade effect",url:"https://jsfiddle.net/GCassay/m4zcd3q1/",status:"0"},{id:"36006e637d9d7edc54aff07e872a5a36",title:"BG Slider (setInterval)",desc:"Change BG color on button click with slide effect",url:"https://jsfiddle.net/GCassay/yt8te19t/",status:"0"},{id:"9a6bdc0c333d0e47c3559774597ba3fc",title:"BG SLIDER",desc:"Change BG color on button click with slide fx",url:"https://jsfiddle.net/GCassay/2Lc2euq3/",status:"0"},{id:"db2be87123893a1d4b059434b0520e0d",title:"Rainbow Slider v.1",desc:"BG Slider with array color",url:"https://jsfiddle.net/GCassay/w9h4tm3c/",status:"0"},{id:"97f00b868b24a0e52ae4fb46f34ac94d",title:"Rainbow Slider v.2",desc:"BG Slider with array color",url:"https://jsfiddle.net/GCassay/v2psktn6/",status:"0"},{id:"a6cafd627e44a8a894895ce7720e6aff",title:"Rainbow Slider",desc:"BG Slider with array color",url:"https://jsfiddle.net/GCassay/a81ddws1/",status:"0"},{id:"e71353f077df66c23dd8f549d72e592b",title:"Random Rainbow Slider",desc:"BG Slider with random color",url:"https://jsfiddle.net/GCassay/jd912hfz/",status:"0"},{id:"84c0219b2861ae200d301f803b31bed8",title:"Random Rainbow Slider (w/o repeat)",desc:"BG Slider with random color (w/o repeat)",url:"https://jsfiddle.net/GCassay/5x76aoob/",status:"0"},{id:"f1c733e47652464aebc5b007d07ffe34",title:"Profile card list",desc:"List card collection from object array",url:"https://jsfiddle.net/GCassay/0xbuzyvu/",status:"0"},{id:"9b4f98ed4b20c523cfe1df55604c20a1",title:"Form Profile Card",desc:"Card list with form",url:"https://jsfiddle.net/GCassay/qfkvto9c/",status:"0"},{id:"2dde4c042dded58436b2721a65206a47",title:"Color Grid",desc:"Generate grid with color picker",url:"https://jsfiddle.net/GCassay/rnL049sa/",status:"0"},{id:"b1c0c9512f2ae9a3735555bf6335b6b2",title:"Gender Selector",desc:"Animated radio buttons",url:"https://jsfiddle.net/GCassay/5ffdttk9/",status:"1"},{id:"a2be19cdbd687ac3ef15617ee402fa31",title:"Game shop template",desc:"Duplicate template",url:"https://jsfiddle.net/GCassay/4rtzevqz/",status:"0"},{id:"2805ce24e0555f9952a4a377c8340545",title:"asdf",desc:"asdf",url:"sdfk",status:"0"}]
           }
         });

@@ -7,9 +7,12 @@ angular .module('trialTop')
 
         });
 
-function trialTopController() {
+function trialTopController(crud) {
 
   this.addTrial = function() {
-
+    console.log('NEW TRIAL');
   }
+
+  
+
 }
