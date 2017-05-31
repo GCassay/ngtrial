@@ -10,9 +10,9 @@ angular .module('trialTop')
 function trialTopController(crud) {
 
   this.addTrial = function() {
-    console.log('NEW TRIAL');
+    
   }
 
-  
+
 
 }

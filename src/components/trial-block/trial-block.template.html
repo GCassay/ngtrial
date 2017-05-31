@@ -5,12 +5,12 @@
       <h3 class="trial-title">{{ $ctrl.trial.title }}</h3>
     </a>
     <div class="options">
-      <i class="fa fa-chevron-down options-btn" aria-hidden="true" ng-click="shownForm = !shownForm"></i>
+      <i class="fa fa-chevron-down options-btn" aria-hidden="true" ng-click="$ctrl.toggleBlock({ id: $ctrl.trial.id })"></i>
     </div>
   </div>
 
   <!-- Trial Data Form -->
-  <form class="trial-block-form" ng-submit="trialUpdate()" ng-show="shownForm">
+  <form class="trial-block-form" ng-submit="trialUpdate()" ng-show="$ctrl.activeTrial === $ctrl.trial.id">
     <div class="trial-editor">
       <div class="trial-data">
 

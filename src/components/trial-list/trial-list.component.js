@@ -8,7 +8,19 @@ angular .module('trialList')
         });
 
 function listControllerFunc(crud){
-  console.log(crud.trials[0]);
-  crud.trials.push('trial 4');
-  this.trials = crud.trials;
+
+  var vm = this;
+
+  crud.get()
+      .then(function(trials) {
+        vm.trials = trials;
+      })
+      .catch(function(response) {
+        console.error('Gists error', response.status, response.data);
+      });
+
+      vm.toggleBlock = function(id) {
+        this.activeTrial = (this.activeTrial !== id) ? id : null;
+      }
+
 }

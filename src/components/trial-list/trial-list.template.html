@@ -3,7 +3,10 @@
     <h2>Trial List</h2>
     <div id="list-container">
       <ul>
-        <trial-block ng-repeat="trial in $ctrl.trials" trial="trial"></trial-block>
+        <trial-block  ng-repeat="trial in $ctrl.trials"
+                      trial="trial"
+                      active-trial="$ctrl.activeTrial"
+                      toggle-block="$ctrl.toggleBlock(id)"></trial-block>
       </ul>
     </div>
   </div>
