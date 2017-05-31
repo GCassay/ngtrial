@@ -1,11 +1,82 @@
-<li ng-repeat='trial in trials'>
+<li class="trial">
 
-  <a href="" class="trial-link" target="_blank">
-    <h3 class="trial-title"></h3>
-  </a>
-  <div class="options">
-    <i class="fa fa-chevron-down options-btn" aria-hidden="true"></i>
+  <div class="trial-top">
+    <a href="{{ $ctrl.trial.url }}" class="trial-link" target="_blank">
+      <h3 class="trial-title">{{ $ctrl.trial.title }}</h3>
+    </a>
+    <div class="options">
+      <i class="fa fa-chevron-down options-btn" aria-hidden="true" ng-click="shownForm = !shownForm"></i>
+    </div>
   </div>
-  <block-form></block-form>
+
+  <!-- Trial Data Form -->
+  <form class="trial-block-form" ng-submit="trialUpdate()" ng-show="shownForm">
+    <div class="trial-editor">
+      <div class="trial-data">
+
+        <label for="trial-input-title" class="trial-label">
+          <i class="fa fa-caret-right" aria-hidden="true"></i> TITLE
+        </label>
+        <input  type="text"
+                name="trial-input-title"
+                class="trial-txt-input trial-input-title"
+                value="{{ $ctrl.trial.title }}">
+
+        <label for="trial-input-desc" class="trial-label">
+          <i class="fa fa-caret-right" aria-hidden="true"></i> DESCRIPTION
+        </label>
+        <input  type="text"
+                name="trial-input-desc"
+                class="trial-txt-input trial-input-desc"
+                value="{{ $ctrl.trial.desc }}">
+
+        <label for="trial-input-url" class="trial-label">
+          <i class="fa fa-caret-right" aria-hidden="true"></i> LINK
+        </label>
+        <input  type="text"
+                name="trial-input-url"
+                class="trial-txt-input trial-input-url"
+                value="{{ $ctrl.trial.url }}">
+      <!-- TODO
+        <label for="trial-input-comm" class="trial-label">
+          <i class="fa fa-caret-right" aria-hidden="true"></i> COMMENTS
+        </label>
+        <textarea name="trial-input-comm" class="trial-txt-input trial-input-comm" rows="4" maxlength="225"></textarea>
+      -->
+        <label class="trial-label">
+          <i class="fa fa-caret-right" aria-hidden="true"></i> STATUS
+        </label>
+
+        <ul class="trial-status">
+          <li id="op-accept">
+            <input type="radio"
+                   class="trial-input-status"
+                   name="trial-input-status"
+                   ng-model="$ctrl.trial.status"
+                   value="0"> Pending
+          </li>
+          <li id="op-reject">
+            <input type="radio"
+                   class="trial-input-status"
+                   name="trial-input-status"
+                   ng-model="$ctrl.trial.status"
+                   value="1"> Approved
+          </li>
+          <li id="op-pending">
+            <input type="radio"
+                   class="trial-input-status"
+                   name="trial-input-status"
+                   ng-model="$ctrl.trial.status"
+                   value="2"> Not Approved
+          </li>
+        </ul>
+
+      </div>
+      <div class="trial-submit">
+        <button class="trial-delete-btn" ng-click="trialRemove()">Delete</button>
+        <button class="trial-submit-btn">Save changes</button>
+      </div>
+    </div>
+  </form>
 
 </li>

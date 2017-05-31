@@ -2,8 +2,8 @@
   <div>
     <h2>Trial List</h2>
     <div id="list-container">
-      <ul class="trial" ng-repeat="trial in $ctrl.trials">
-        <trial-block>{{ trial.desc }}</trial-block>
+      <ul>
+        <trial-block ng-repeat="trial in $ctrl.trials" trial="trial"></trial-block>
       </ul>
     </div>
   </div>
