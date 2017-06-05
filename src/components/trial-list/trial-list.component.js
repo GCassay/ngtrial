@@ -1,3 +1,5 @@
+// trial-list.component.js
+
 angular .module('trialList')
         .component('trialList', {
 
@@ -17,7 +19,7 @@ angular .module('trialList')
 function listControllerFunc(){
 
   var vm = this;
-  
+
   vm.readTrials();
 
   // Control show/hide trial blocks

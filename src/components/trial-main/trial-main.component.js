@@ -1,3 +1,5 @@
+// trial-main.component.js
+
 angular .module('trialMain')
         .component('trialMain', {
           templateUrl: "./components/trial-main/trial-main.template.html",
@@ -9,7 +11,7 @@ function trialMainController(crud, encode) {
   var vm = this;
   vm.encode = encode;
 
-  // Function to read Trial Data
+  // Read trial data
   vm.readTrials = function() {
     crud.get()
         .then(function(trials) {
@@ -33,9 +35,11 @@ function trialMainController(crud, encode) {
 
     vm.trials.push(newTrial);
     crud.update({ trials: vm.trials });
+
+    vm.title = "";
   }
 
-  // Save trial data changes
+  // Update trial data
   vm.updateTrials = function(trial) {
     crud.update({ trials: vm.trials });
   }
