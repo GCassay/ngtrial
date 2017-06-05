@@ -19,7 +19,7 @@ function listControllerFunc(){
   crud.get()
       .then(function(trials) {
         vm.trials = trials;
-        console.log(vm.trials)
+        
       })
       .catch(function(response) {
         console.error('Gists error', response.status, response.data);

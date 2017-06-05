@@ -1,1 +1,1 @@
-angular.module('appTrial', ['trialMain','services','trialTop','trialList','trialBlock']);
+angular.module('appTrial', ['services','trialMain','trialTop','trialList','trialBlock']);
