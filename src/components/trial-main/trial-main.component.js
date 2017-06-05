@@ -20,7 +20,7 @@ function trialMainController(crud, encode) {
         });
   }
 
-  // Function to add new trial
+  // Add new trial
   vm.addTrial = function(newTitle,newDesc,newUrl) {
 
     var newTrial = {
@@ -35,12 +35,12 @@ function trialMainController(crud, encode) {
     crud.update({ trials: vm.trials });
   }
 
-  // Function to save trial data changes
+  // Save trial data changes
   vm.updateTrials = function(trial) {
     crud.update({ trials: vm.trials });
   }
 
-  // Function to delete specific trial
+  // Delete specific trial
   vm.removeTrial = function(trial) {
     var trialIndex = vm.trials.indexOf(trial);
     vm.trials.splice(trialIndex,1);

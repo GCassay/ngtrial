@@ -28,18 +28,8 @@ angular .module('services', [])
           });
         }
 
-        function addTrial(updatedContent) {
-          readTrials().then(function(trials){
-            trials = trials;
-            trials.push({"id":"2805ce24e0555f9952a4a377c8340888","title":"Numbers 1-1000","desc":"List numbers from 1 to 100","url":"https://jsfiddle.net/GCassay/7bozbdoj/","status":"1"});
-            console.log(trials)
-            updateTrials({ "trials" : trials })
-          });
-        }
-
         return {
           get: readTrials,
-          update: updateTrials,
-          add: addTrial
+          update: updateTrials
         }
       });
