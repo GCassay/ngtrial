@@ -4,8 +4,10 @@ angular .module('trialMain')
           controller: trialMainController
         });
 
-function trialMainController(crud) {
+function trialMainController(crud, encode) {
+
   var vm = this;
+  vm.encode = encode;
 
   // Function to read Trial Data
   vm.readTrials = function() {
@@ -22,8 +24,9 @@ function trialMainController(crud) {
   vm.addTrial = function(newTitle,newDesc,newUrl) {
 
     var newTrial = {
-      id: "",
-      title: newDesc,
+      id: vm.encode.MD5(newTitle.concat(vm.trials.length)),
+      title: newTitle,
+      desc: newDesc,
       url: newUrl,
       status: "0"
     }

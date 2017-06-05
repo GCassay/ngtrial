@@ -12,7 +12,7 @@
     </div>
       <section id="trial-form" class="view-form" ng-show="shownForm">
         <form name="new-trial-form" id="new-trial-form"
-                                    ng-submit="$ctrl.addTrial();">
+                                    ng-submit="$ctrl.addTrial($ctrl.title,$ctrl.desc,$ctrl.url);">
           <div>
             <h2>New Trial</h2>
             <input type="text"  id="formTitle"

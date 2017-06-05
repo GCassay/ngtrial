@@ -1,1 +1,1 @@
-angular.module('trialMain', ['services','trialTop','trialList','trialBlock']);
+angular.module('trialMain', ['services','service.encode','trialTop','trialList','trialBlock']);
