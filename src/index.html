@@ -16,23 +16,17 @@
 
   <body>
 
-    <div id="container" class="wrapper">
-
-      <trial-top></trial-top>
-
-      <div id="content">
-        <trial-list activeTrial="activeTrial"></trial-list>
-      </div>
-
-    </div>
+    <trial-main></trial-main>
 
     <script src="./js/angular.min.js"></script>
     <script src="https://unpkg.com/github-api/dist/GitHub.bundle.min.js"></script>
     <script src="./services/crud.services.js"></script>
     <script src="./app.module.js"></script>
+    <script src="./components/trial-main/trial-main.module.js"></script>
     <script src="./components/trial-top/trial-top.module.js"></script>
     <script src="./components/trial-list/trial-list.module.js"></script>
     <script src="./components/trial-block/trial-block.module.js"></script>
+    <script src="./components/trial-main/trial-main.component.js"></script>
     <script src="./components/trial-top/trial-top.component.js"></script>
     <script src="./components/trial-list/trial-list.component.js"></script>
     <script src="./components/trial-block/trial-block.component.js"></script>

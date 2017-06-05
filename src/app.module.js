@@ -1,9 +1,1 @@
-angular.module('appTrial', ['services','trialTop','trialList','trialBlock'])
-        .component('trialContainer', {
-
-          controller: function appModuleController() {
-            console.log('algo');
-          }
-
-        }
-      );
+angular.module('appTrial', ['trialMain','services','trialTop','trialList','trialBlock']);
