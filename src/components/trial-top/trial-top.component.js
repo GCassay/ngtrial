@@ -3,16 +3,8 @@ angular .module('trialTop')
 
           templateUrl: './components/trial-top/trial-top.template.html',
 
-          controller: trialTopController
+          bindings: {
+            addTrial: '='
+          }
 
         });
-
-function trialTopController(crud) {
-
-  this.addTrial = function() {
-    
-  }
-
-
-
-}

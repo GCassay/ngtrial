@@ -18,8 +18,8 @@ angular .module('services', [])
           return deferred.promise;
         }
 
-        function updateTrials() {
-          var jsonContent = JSON.stringify(updatedContent);
+        function updateTrials(updatedContent) {
+          var jsonContent = angular.toJson(updatedContent); // Strip intern angular values $$ssh
           gist.update({ files: { "trials.json":{ "content": jsonContent } } }).catch( ()=>{
             setTimeout(()=>{
               updateGist(updatedContent);
@@ -28,8 +28,13 @@ angular .module('services', [])
           });
         }
 
-        function addTrial(trial) {
-
+        function addTrial(updatedContent) {
+          readTrials().then(function(trials){
+            trials = trials;
+            trials.push({"id":"2805ce24e0555f9952a4a377c8340888","title":"Numbers 1-1000","desc":"List numbers from 1 to 100","url":"https://jsfiddle.net/GCassay/7bozbdoj/","status":"1"});
+            console.log(trials)
+            updateTrials({ "trials" : trials })
+          });
         }
 
         return {

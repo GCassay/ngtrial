@@ -3,12 +3,16 @@
     <h1 class="header-h1">Code Trials</h1>
     <nav class="nav">
       <div class="header-nav">
-        <i class="header-btn fa fa-plus" aria-hidden="true" title="View Full List" ng-click="shownForm = !shownForm"></i>
+        <i  class="header-btn fa fa-plus"
+            aria-hidden="true"
+            title="View Full List"
+            ng-click="shownForm = !shownForm"></i>
       </div>
     </nav>
     </div>
       <section id="trial-form" class="view-form" ng-show="shownForm">
-        <form name="new-trial-form" id="new-trial-form" ng-submit="$ctrl.addTrial();">
+        <form name="new-trial-form" id="new-trial-form"
+                                    ng-submit="$ctrl.addTrial();">
           <div>
             <h2>New Trial</h2>
             <input type="text"  id="formTitle"
