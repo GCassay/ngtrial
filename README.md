@@ -1,4 +1,4 @@
-*CODE TRIAL (AngularJS Version)*
+# **CODE TRIAL (AngularJS Version)**
 
-**REFERENCES**
+## REFERENCES
 http://markdalgleish.com/2013/06/using-promises-in-angularjs-views/
