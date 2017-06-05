@@ -6,9 +6,41 @@ angular .module('trialMain')
 
 function trialMainController(crud) {
   var vm = this;
-  vm.trialcrud = crud;
 
-  vm.addTrial = function() {
-    crud.add({"id":1,"title":"Numbers 1-1000","desc":"List numbers from 1 to 100","url":"https://jsfiddle.net/GCassay/7bozbdoj/","status":"1"});
+  // Function to read Trial Data
+  vm.readTrials = function() {
+    crud.get()
+        .then(function(trials) {
+          vm.trials = trials;
+        })
+        .catch(function(response) {
+          console.error('Gists error', response.status, response.data);
+        });
+  }
+
+  // Function to add new trial
+  vm.addTrial = function(newTitle,newDesc,newUrl) {
+
+    var newTrial = {
+      id: "",
+      title: newDesc,
+      url: newUrl,
+      status: "0"
+    }
+
+    vm.trials.push(newTrial);
+    crud.update({ trials: vm.trials });
+  }
+
+  // Function to save trial data changes
+  vm.updateTrials = function(trial) {
+    crud.update({ trials: vm.trials });
+  }
+
+  // Function to delete specific trial
+  vm.removeTrial = function(trial) {
+    var trialIndex = vm.trials.indexOf(trial);
+    vm.trials.splice(trialIndex,1);
+    crud.update({ trials: vm.trials });
   }
 }

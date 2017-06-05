@@ -1,6 +1,9 @@
 <div id="container" class="wrapper">
 
   <trial-top add-trial="$ctrl.addTrial"></trial-top>
-  <trial-list trialcrud="$ctrl.trialcrud"></trial-list>
+  <trial-list read-trials="$ctrl.readTrials"
+              update-trials="$ctrl.updateTrials"
+              remove-trial="$ctrl.removeTrial"
+              trials="$ctrl.trials"></trial-list>
 
 </div>

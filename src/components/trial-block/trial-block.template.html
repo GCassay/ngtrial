@@ -12,7 +12,7 @@
   </div>
 
   <!-- Trial Data Form -->
-  <form class="trial-block-form"  ng-submit="$ctrl.trialUpdate( $ctrl.trial )"
+  <form class="trial-block-form"  ng-submit="$ctrl.updateTrials( $ctrl.trial )"
                                   ng-show="$ctrl.activeTrial === $ctrl.trial.id">
     <div class="trial-editor">
       <div class="trial-data">
@@ -79,7 +79,7 @@
 
       </div>
       <div class="trial-submit">
-        <button class="trial-delete-btn" ng-click="trialRemove()">Delete</button>
+        <button class="trial-delete-btn" ng-click="$ctrl.removeTrial( $ctrl.trial )">Delete</button>
         <button class="trial-submit-btn">Save changes</button>
       </div>
     </div>
