@@ -5,8 +5,11 @@ Javascript practice collection
 
 ## Details
 Angular JS 1.5
+
 Node JS
+
 Gulp
+
 FontAwesome
 
 ## References
