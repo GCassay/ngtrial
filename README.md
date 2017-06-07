@@ -4,7 +4,7 @@
 Javascript practice collection
 
 
-## Details
+## Build
 Angular JS 1.5
 
 Node JS
@@ -12,6 +12,8 @@ Node JS
 Gulp
 
 FontAwesome
+
+*RUN: $ gulp*
 
 
 ## References
