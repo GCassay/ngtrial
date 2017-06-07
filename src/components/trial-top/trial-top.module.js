@@ -1,3 +1,3 @@
 // trial-top.module.js
 
-angular.module('trialTop', ['services']);
+angular.module('trialTop', []);

@@ -22,7 +22,7 @@ function listControllerFunc(){
 
   vm.readTrials();
 
-  // Control show/hide trial blocks
+  // Show/Hide trial blocks
   vm.toggleBlock = function(id) {
     this.activeTrial = (this.activeTrial !== id) ? id : null;
   }
