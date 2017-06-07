@@ -1,7 +1,7 @@
 # **CODE TRIAL (AngularJS Version)**
 
 ## Description
-Javascript practice collection
+App to collect and track JS practices
 
 
 ## Build
@@ -15,3 +15,4 @@ Javascript practice collection
 
 ## References
 http://markdalgleish.com/2013/06/using-promises-in-angularjs-views/
+https://coderwall.com/p/uqqraq/angular-promises-basics-q-service-for-http
