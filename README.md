@@ -5,15 +5,12 @@ Javascript practice collection
 
 
 ## Build
-Angular JS 1.5
+- Angular JS 1.5
+- Node JS
+- Gulp
+- FontAwesome
 
-Node JS
-
-Gulp
-
-FontAwesome
-
-*RUN: $ gulp*
+> *RUN: $ gulp*
 
 
 ## References
