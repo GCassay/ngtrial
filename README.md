@@ -14,5 +14,5 @@ App to collect and track JS practices
 
 
 ## References
-http://markdalgleish.com/2013/06/using-promises-in-angularjs-views/
-https://coderwall.com/p/uqqraq/angular-promises-basics-q-service-for-http
+- http://markdalgleish.com/2013/06/using-promises-in-angularjs-views/
+- https://coderwall.com/p/uqqraq/angular-promises-basics-q-service-for-http
