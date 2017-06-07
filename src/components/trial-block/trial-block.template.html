@@ -54,7 +54,6 @@
                    class="trial-input-status"
                    name="trial-input-status"
                    ng-model="$ctrl.trial.status"
-                   ng-click="$ctrl.changeIcon('0')"
                    value="0"> Pending
           </li>
           <li id="op-reject">
@@ -62,7 +61,6 @@
                    class="trial-input-status"
                    name="trial-input-status"
                    ng-model="$ctrl.trial.status"
-                   ng-click="$ctrl.changeIcon('1')"
                    value="1"> Approved
           </li>
           <li id="op-pending">
@@ -70,15 +68,15 @@
                    class="trial-input-status"
                    name="trial-input-status"
                    ng-model="$ctrl.trial.status"
-                   ng-click="$ctrl.changeIcon('2')"
                    value="2"> Not Approved
           </li>
         </ul>
 
       </div>
       <div class="trial-submit">
-        <button class="trial-delete-btn" ng-click="$ctrl.removeTrial( $ctrl.trial )">Delete</button>
-        <button class="trial-submit-btn">Save changes</button>
+        <button class="trial-delete-btn"
+                ng-click="$ctrl.removeTrial( $ctrl.trial )">Delete</button>
+        <button class="trial-submit-btn" ng-click="$ctrl.changeIcon( $ctrl.trial.status )">Save changes</button>
       </div>
     </div>
   </form>

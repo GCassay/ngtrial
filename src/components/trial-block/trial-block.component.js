@@ -22,7 +22,7 @@ function trialBlockController() {
   vm.statusicon = "";
 
   switch(vm.trial.status){
-    case '0':
+    case '0': default:
       vm.statusicon = "trial-pending";
       break;
     case '1':
@@ -34,8 +34,9 @@ function trialBlockController() {
   }
 
   vm.changeIcon = function(icon) {
+    
     switch(icon){
-      case '0':
+      case '0': default:
         vm.statusicon = "trial-pending";
         break;
       case '1':
