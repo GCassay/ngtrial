@@ -7,17 +7,17 @@ var gulp = require('gulp'),
 gulp.task('watch', function() {
   browserSync.init({
     server: {
-      baseDir: "src/"
+      baseDir: "public/"
     }
   })
 
   // html changes
-  gulp.watch('src/*').on("change", reload)
+  gulp.watch('public/*').on("change", reload)
   // javascript changes
-  gulp.watch('src/js/**/*').on("change", reload)
-  gulp.watch('src/components/**/*').on("change", reload)
+  gulp.watch('public/js/**/*').on("change", reload)
+  gulp.watch('public/components/**/*').on("change", reload)
   // css changes
-  //gulp.watch('src/css/**/*').on("change", reload);
+  //gulp.watch('public/css/**/*').on("change", reload);
 });
 
 gulp.task('default', ['watch']);
