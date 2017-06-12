@@ -13,6 +13,12 @@ App to collect and track JS practices
 > *RUN: $ gulp*
 
 
+---
+
+
+> *URL: localhost:3000*
+
+
 ## References
 - http://markdalgleish.com/2013/06/using-promises-in-angularjs-views/
 - https://coderwall.com/p/uqqraq/angular-promises-basics-q-service-for-http
