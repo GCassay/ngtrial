@@ -1,6 +1,6 @@
 // trial-top.component.js
 
-angular .module('trialTop')
+angular .module('trialTop', [])
         .component('trialTop',{
 
           templateUrl: './components/trial-top/trial-top.template.html',

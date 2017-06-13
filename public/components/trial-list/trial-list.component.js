@@ -1,6 +1,6 @@
 // trial-list.component.js
 
-angular .module('trialList')
+angular .module('trialList', ['trialBlock'])
         .component('trialList', {
 
           templateUrl: './components/trial-list/trial-list.template.html',

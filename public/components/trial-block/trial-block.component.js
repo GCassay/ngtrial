@@ -1,6 +1,6 @@
 // trial-block.component.js
 
-angular .module('trialBlock')
+angular .module('trialBlock', [])
         .component('trialBlock', {
 
           templateUrl: "./components/trial-block/trial-block.template.html",
@@ -34,7 +34,7 @@ function trialBlockController() {
   }
 
   vm.changeIcon = function(icon) {
-    
+
     switch(icon){
       case '0': default:
         vm.statusicon = "trial-pending";

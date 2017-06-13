@@ -1,6 +1,6 @@
 // trial-main.component.js
 
-angular .module('trialMain')
+angular .module('trialMain', ['services','service.encode','trialTop','trialList','trialBlock'])
         .component('trialMain', {
           templateUrl: "./components/trial-main/trial-main.template.html",
           controller: trialMainController
